@@ -4,6 +4,8 @@ Icinga setup
 Step 1: Download the icinga 10.1 x86_64 package based on the architecture of your machine.
 <br><img src="images/1.png" width="500px">
 
+Steps 2-10 are optional. Follow these only if you're getting a dot net error during icinga install.
+
 Step 2: If it prompts you for a dot net dependency, install it using the following steps:
 Go to windows programs and features:
 <br><img src="images/2.png" width="500px">
@@ -73,6 +75,9 @@ Step 23: Select the options as it is:
 
 Step 24: Select the options as it is:
 <br><img src="images/27.png" width="500px">
+
+The new node metrics should now be visible on the icinga gui: http://172.16.0.23/icingaweb2/monitoring/list/hosts
+<br><img src="images/32.png" width="500px">
 
 When you try to download and install on windows servers, you might get the following errors:
 <br><img src="images/28.png" width="500px">
