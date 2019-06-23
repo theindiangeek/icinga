@@ -1,0 +1,2 @@
+# icinga
+Icinga setup
