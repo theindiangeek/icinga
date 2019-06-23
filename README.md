@@ -2,77 +2,77 @@
 Icinga setup
 
 Step 1: Download the icinga 10.1 x86_64 package based on the architecture of your machine.
-<img src="images/1.png" width="500px">
+<br><img src="images/1.png" width="500px">
 
 Step 2: If it prompts you for a dot net dependency, install it using the following steps:
 Go to windows programs and features:
-<img src="images/2.png" width="500px">
+<br><img src="images/2.png" width="500px">
 
 Step 3: Select "Turn windows features on or off"
-<img src="images/3.png" width="500px">
+<br><img src="images/3.png" width="500px">
 
 Step 4: Click on next, choosing the options as shown:
-<img src="images/4.png" width="500px">
+<br><img src="images/4.png" width="500px">
 
 Step 5: Click on next, choosing the options as shown:
-<img src="images/5.png" width="500px">
+<br><img src="images/5.png" width="500px">
 
 Step 6: Click on next, choosing the options as shown:
-<img src="images/6.png" width="500px">
+<br><img src="images/6.png" width="500px">
 
 Step 7: Select Features -> .NET framework 3.5 features
-<img src="images/7.png" width="500px">
+<br><img src="images/7.png" width="500px">
 
 Step 8: Click on install:
-<img src="images/8.png" width="500px">
+<br><img src="images/8.png" width="500px">
 
 Step 9: Wait for it to install:
 <img src="images/9.png" width="500px">
 
 Step 10: Once it's done, close the window:
-<img src="images/10.png" width="500px">
+<br><img src="images/10.png" width="500px">
 
 Step 11: Install the agent downloaded in step 1.
 
 Step 12: After that, open the agent setup wizard:
-<img src="images/29.png" width="500px">
+<br><img src="images/29.png" width="500px">
 
 Step 13: Login to the icinga server machine and get the client/satellite token
-<img src="images/7.png" width="500px">
+<br><img src="images/7.png" width="500px">
 Input the node name as it is (Even the case should be the same) and execute the above command.
 
 Step 14: Once you obtain the token for the windows machine from above step, paste it in the node setup wizard in step 12 and also select the following options in the bottom right section:
 Accept commands from master or satellite instances.
 Accept config updates from master or satellite instances.
 Install/update bundled NSClient++ (This will be installed later. It is required to check various metrics on the machine you're configuring this)
-<img src="images/31.png" width="500px">
+<br><img src="images/31.png" width="500px">
 
 Step 15: Now click on the "Add button" to add the master info as it is shown below:
-<img src="images/30.png" width="500px">
+<br><img src="images/30.png" width="500px">
 
 Step 16: Once you click on next, you will be presented with the following info:
-<img src="images/12.png" width="500px">
+<br><img src="images/12.png" width="500px">
 
 Step 17: Click on next to complete the icinga node wizard setup.
-<img src="images/17.png" width="500px">
+<br><img src="images/17.png" width="500px">
 
 Step 18: Now the installation for nsclient will start:
-<img src="images/22.png" width="500px">
+<br><img src="images/22.png" width="500px">
 
 Step 20: Select the options as it is:
-<img src="images/23.png" width="500px">
+<br><img src="images/23.png" width="500px">
 
 Step 21: Select the options as it is:
-<img src="images/24.png" width="500px">
+<br><img src="images/24.png" width="500px">
 
 Step 22: Select the options as it is:
-<img src="images/25.png" width="500px">
+<br><img src="images/25.png" width="500px">
 
 Step 23: Select the options as it is:
-<img src="images/26.png" width="500px">
+<br><img src="images/26.png" width="500px">
 
 Step 24: Select the options as it is:
-<img src="images/27.png" width="500px">
+<br><img src="images/27.png" width="500px">
 
 When you try to download and install on windows servers, you might get the following errors:
-<img src="images/28.png" width="500px">
+<br><img src="images/28.png" width="500px">
