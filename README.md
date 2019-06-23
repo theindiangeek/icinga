@@ -27,7 +27,7 @@ Step 8: Click on install:
 <br><img src="images/8.png" width="500px">
 
 Step 9: Wait for it to install:
-<img src="images/9.png" width="500px">
+<br><img src="images/9.png" width="500px">
 
 Step 10: Once it's done, close the window:
 <br><img src="images/10.png" width="500px">
@@ -38,7 +38,7 @@ Step 12: After that, open the agent setup wizard:
 <br><img src="images/29.png" width="500px">
 
 Step 13: Login to the icinga server machine and get the client/satellite token
-<br><img src="images/7.png" width="500px">
+<br><img src="images/7.png" width="500px"><br>
 Input the node name as it is (Even the case should be the same) and execute the above command.
 
 Step 14: Once you obtain the token for the windows machine from above step, paste it in the node setup wizard in step 12 and also select the following options in the bottom right section:
