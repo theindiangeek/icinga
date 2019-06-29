@@ -97,20 +97,6 @@ apply Service "disk" {
   assign where "prometheus" in host.groups
 }
 
-apply Service "nscp-local-counter-cpu" {
-  check_command = "nscp-local-counter"
-  command_endpoint = host.vars.client_endpoint
-
-  vars.nscp_counter_name = "Processor(_total)% Processor Time"
-  vars.nscp_counter_perfsyntax = "Total Processor Time"
-  vars.nscp_counter_warning = 1
-  vars.nscp_counter_critical = 5
-
-  vars.nscp_counter_showall = true
-
-  assign where "prometheus" in host.groups
-}
-
 apply Service "load" {
   import "generic-service"
 
