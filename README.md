@@ -6,6 +6,13 @@ Step 1: Download the icinga 10.1 x86_64 package based on the architecture of you
 <br>https://packages.icinga.com/windows/Icinga2-v2.10.1-x86_64.msi
 <br><img src="images/1.png" width="500px">
 
+<br>You can automate these steps in a powershell terminal
+<br>cd Downloads
+<br>$WebClient = New-Object System.Net.WebClient
+<br>$WebClient.DownloadFile("https://packages.icinga.com/windows/Icinga2-v2.10.1-x86_64.msi","Downloads\Icinga2-v2.10.1-x86_64.msi")
+<br>Unblock-File -Path Icinga2-v2.10.1-x86_64.msi
+<br>msiexec.exe /i Icinga2-v2.10.1-x86_64.msi
+
 Steps 2-10 are optional. Follow these only if you're getting a dot net error during icinga install.
 
 Step 2: If it prompts you for a dot net dependency, install it using the following steps:
