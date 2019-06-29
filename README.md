@@ -2,6 +2,7 @@
 Icinga setup
 
 Step 1: Download the icinga 10.1 x86_64 package based on the architecture of your machine.
+<br>https://packages.icinga.com/windows/
 <br><img src="images/1.png" width="500px">
 
 Steps 2-10 are optional. Follow these only if you're getting a dot net error during icinga install.
