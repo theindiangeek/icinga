@@ -71,8 +71,8 @@ Now restart your Icinga 2 daemon to finish the installation!
 Step 5: Now restart icinga service:
 [root@prometheusdb yum.repos.d]# systemctl restart icinga2
 
-Step 6: Now install the nscp plugins on the node: [Check this error](../errors/nscp.md)
-yum install https://github.com/mickem/nscp/releases/download/0.4.3.143/NSCP-0.4.3.143-1.el7.x86_64.rpm  -y
+Step 6: Now install the nscp plugins on the node: [Check this error](errors/nscp.md)
+<br>yum install https://github.com/mickem/nscp/releases/download/0.4.3.143/NSCP-0.4.3.143-1.el7.x86_64.rpm  -y
 
 Step 7: now login to the icinga server and make the following files step by step.
 Change the value prometheusdb to the actual hostname of the machine on which you are configuring icinga:
