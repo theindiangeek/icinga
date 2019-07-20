@@ -1,18 +1,18 @@
 Step 1: Install the icinga repo and then icinga using:
 
 yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm -y
-yum install icinga2 -y
-systemctl enable icinga2
-systemctl start icinga2
+<br>yum install icinga2 -y
+<br>systemctl enable icinga2
+<br>systemctl start icinga2
 
 Step 2: Get hostname of machine using hostname command.
 
 Step 3: Login to the icinga server and using this hostname, generate token from icinga server:
-icinga2 pki ticket --cn <Specify the machine hostname here>
+<br>icinga2 pki ticket --cn <Specify the machine hostname here>
 
 Step 4: Now on the linux node, do the following steps as it is, changing the hostname to its actual name of course:
 
-[root@prometheusdb yum.repos.d]# icinga2 node wizard
+<p>[root@prometheusdb yum.repos.d]# icinga2 node wizard
 Welcome to the Icinga 2 Setup Wizard!
 
 We will guide you through all required configuration details.
@@ -20,7 +20,6 @@ We will guide you through all required configuration details.
 Please specify if this is a satellite/client setup ('n' installs a master setup) [Y/n]: y
 
 Starting the Client/Satellite setup routine...
-
 Please specify the common name (CN) [prometheusdb]: <Specify the machine hostname here>
 
 Please specify the parent endpoint(s) (master or satellite) where this node should connect to:
@@ -67,6 +66,7 @@ Disabling the inclusion of the conf.d directory...
 Done.
 
 Now restart your Icinga 2 daemon to finish the installation!
+</p>
 
 Step 5: Now restart icinga service:
 [root@prometheusdb yum.repos.d]# systemctl restart icinga2
