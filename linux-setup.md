@@ -73,7 +73,7 @@ Disabling the inclusion of the conf.d directory...
 Done.
 
 Now restart your Icinga 2 daemon to finish the installation!
-</p>
+
 
 Step 5: Now restart icinga service:
 [root@prometheusdb yum.repos.d]# systemctl restart icinga2
@@ -104,6 +104,8 @@ object HostGroup "prometheus" {
 <br>object Endpoint "TomcatNode1" {
 <br>  host = "172.16.0.90"
 <br>}
+
+memory: [Check this error before configuring memory services on linux](errors/memory.md)
 2. /etc/icinga2/conf.d/services/prom.conf
 
 apply Service "procs-${1}" {
@@ -140,7 +142,18 @@ apply Service "load-{$1}" {
   command_endpoint =  "${1}"
   assign where "${1}" in host.groups
 }
-memory: [Check this error](errors/memory.md)
+
+apply Service "memory-{apachenode3}" {
+  import "generic-service"
+  command_endpoint =  "apachenode3"
+  assign where "apachenode3" in host.groups
+  check_command = "mem"
+  vars.mem_used = true
+  vars.mem_cache = true
+  vars.mem_warning = 70
+  vars.mem_critical = 80
+}
+
 object Endpoint "${1}" {
   host = "${2}"
 }
@@ -164,3 +177,4 @@ address = "172.16.0.189"
 Step8: After that restart icinga server process using: systemctl restart icinga2
 
 The node and the related services should show up on the gui now: http://172.16.0.23/icingaweb2/monitoring/list/hosts
+</p>
