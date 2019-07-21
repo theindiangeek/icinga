@@ -1,9 +1,16 @@
-Step 1: Install the icinga repo and then icinga using:
+SOURCE: https://kifarunix.com/how-to-install-nagios-plugins-and-nrpe-agents-on-centos-7-rhel-7-fedora-29/
 
+Step 1: Install the icinga repo and then icinga using:
+<p>
 yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm -y
-<br>yum install icinga2 -y
-<br>systemctl enable icinga2
-<br>systemctl start icinga2
+yum install icinga2 -y
+systemctl enable icinga2
+systemctl start icinga2
+yum install epel-release -y
+yum install nrpe -y
+yum install nagios-plugins-all.x86_64
+
+ </p>
 
 Step 2: Get hostname of machine using hostname command.
 
