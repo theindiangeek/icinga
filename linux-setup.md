@@ -140,6 +140,7 @@ apply Service "load-{$1}" {
   command_endpoint =  "${1}"
   assign where "${1}" in host.groups
 }
+memory: [Check this error](errors/memory.md)
 object Endpoint "${1}" {
   host = "${2}"
 }
