@@ -4,7 +4,7 @@
 <br>        https://icinga.com/docs/icinga2/latest/doc/10-icinga-template-library/
 <br>        https://www.techrepublic.com/article/how-to-set-up-icinga2-agent-monitoring/
 <br>
-
+<br>
 Step 1: Install the icinga repo and then icinga using:
 <p>
 yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm -y
