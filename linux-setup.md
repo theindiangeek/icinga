@@ -2,7 +2,7 @@
 <br>SOURCE: https://kifarunix.com/how-to-install-nagios-plugins-and-nrpe-agents-on-centos-7-rhel-7-fedora-29/
 <br>        http://nagios-plugins.org/
 <br>        https://icinga.com/docs/icinga2/latest/doc/10-icinga-template-library/
-<br>        https://www.techrepublic.com/article/how-to-set-up-icinga2-agent-monitoring/
+<br>        https://www.techrepublic.com/article/how-to-set-up-icinga2-agent-monitoring/ (Very important! Follow this.)
 <br>
 <br>
 Step 1: Install the icinga repo and then icinga using:
